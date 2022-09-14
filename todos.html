@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Todos List</title>
+
+    <style>
+    
+    </style>
+</head>
+
+<body>
+    <!-- Image and text -->
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <i class="bi bi-card-checklist" width="30" height="30"></i>
+            Todos List
+        </a>
+    </nav>
+
+    <div class="container my-5 bg-dark text-light p-4">
+        <form onsubmit="reset();">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" id="title" aria-describedby="emailHelp"
+                    placeholder="Enter Todos title">
+            </div>
+            <div class="form-group">
+                <label for="descrption">Description</label>
+                <textarea class="form-control" id="descrption" rows="3"></textarea>
+            </div>
+            <button type="submit" id="add" class="btn btn-primary">Add to List</button>
+        </form>
+        <div id="items" class="my-4">
+            <h3>My Items</h3>
+            <div class="list-item p-2">
+                <table class="table table-bordered">
+                    <thead class="thead-dark ">
+                        <tr>
+                            <th scope="col">SNo</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="page-footer bg-dark text-light">
+        <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© <span id="yeDom"></span> Copyright:
+              <a href="http://kaushik-mondal.glitch.me/"> kaushik-mondal.com</a>
+            </div>
+            <!-- Copyright -->
+          
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="todo.js"></script>
+</body>
+
+</html>
